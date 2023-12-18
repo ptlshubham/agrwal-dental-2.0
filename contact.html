@@ -10,7 +10,7 @@
     content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="elemis">
   <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
-  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -135,21 +135,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <h2 class="mb-3 text-start">Welcome our Dental Clinic</h2>
           <p class="lead mb-6 text-start">Fill this form and book your appointment today.</p>
-          <form class="text-start mb-3">
+          <form class="text-start mb-3" action="assets/php/appointment.php" method="POST">
             <div class="form-floating mb-4">
-              <input type="text" class="form-control" placeholder="Name" id="loginName">
-              <label for="loginName">Name</label>
+              <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+              <label for="name">Name</label>
             </div>
             <div class="form-floating mb-4">
-              <input type="email" class="form-control" placeholder="Email" id="loginEmail">
-              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+              <label for="email">Email</label>
             </div>
             <div class="form-floating mb-4">
-              <input type="number" class="form-control" placeholder="Mobile Number" id="loginNumber">
-              <label for="loginEmail">Mobile Number</label>
+              <input type="number" class="form-control" placeholder="Mobile Number" id="contact" name="contact">
+              <label for="contact">Mobile Number</label>
             </div>
             <div class="form-select-wrapper mb-4">
-              <select class="form-select" id="form-select" name="department" required>
+              <select class="form-select" id="form-select" name="services" required>
                 <option selected disabled value="">Select a Services</option>
                 <option value="Sales">Veneers</option>
                 <option value="Marketing">Crown</option>
@@ -163,14 +163,15 @@
               </select>
             </div>
             <div class="form-floating mb-4">
-              <input type="date" class="form-control" placeholder="Date" id="loginDate">
-              <label for="loginDate">Select Date</label>
+              <input type="date" class="form-control" placeholder="Date" id="date" name="date">
+              <label for="date">Select Date</label>
             </div>
             <div class="form-floating mb-4">
-              <input type="time" class="form-control" placeholder="Time" id="loginTime">
-              <label for="loginTime">Select Time</label>
+              <input type="time" class="form-control" placeholder="Time" id="time" name="time">
+              <label for="time">Select Time</label>
             </div>
-            <a class="btn btn-primary rounded-pill btn-login w-100 mb-2">Book Your Smile</a>
+            <input class="btn btn-primary rounded-pill btn-login w-100 mb-2" type="submit" value="Book Your
+            Smile">
           </form>
           <!-- /form -->
 
